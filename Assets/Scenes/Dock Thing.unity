@@ -8565,8 +8565,8 @@ Canvas:
   m_GameObject: {fileID: 437169427}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 910036280}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -9297,7 +9297,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -13196,7 +13196,7 @@ GameObject:
   - component: {fileID: 671404749}
   m_Layer: 0
   m_Name: RightHand Controller
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26612,10 +26612,10 @@ GameObject:
   - component: {fileID: 1201563223}
   - component: {fileID: 1201563226}
   - component: {fileID: 1201563222}
-  - component: {fileID: 1201563231}
   - component: {fileID: 1201563230}
   - component: {fileID: 1201563229}
   - component: {fileID: 1201563228}
+  - component: {fileID: 1201563231}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -26782,18 +26782,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201563221}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 1201563223}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 0.8
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
   m_GravityApplicationMode: 1
-  m_ForwardSource: {fileID: 0}
+  m_ForwardSource: {fileID: 1201563225}
   m_LeftHandMoveAction:
     m_UseReference: 1
     m_Action:
@@ -26827,39 +26827,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201563221}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 919e39492806b334982b6b84c90dd927, type: 3}
+  m_Script: {fileID: 11500000, guid: f9aaac26d24dbcc45b920e255f5ed251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_System: {fileID: 1201563223}
-  m_TurnSpeed: 60
-  m_LeftHandTurnAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Left Hand Turn
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: b9ac2485-f305-451c-9106-d1d25cc235dc
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  m_RightHandTurnAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Hand Turn
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 93119ec4-ae3b-41c0-8fb4-7ff4c5e6f732
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+  movementToggleReference: {fileID: -6092469703172770336, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  teleportationProvider: {fileID: 1201563222}
+  continuousMoveProvider: {fileID: 1201563230}
 --- !u!1001 &1202338621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44503,11 +44479,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985845784}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7000159, y: 3.683065, z: 5.541717}
-  m_Center: {x: -0.0046712277, y: 1.3415325, z: -1.0255642}
+  m_Size: {x: 4.019557, y: 1.3351624, z: 5.541717}
+  m_Center: {x: 1.1551006, y: 0.1675812, z: -1.0255642}
 --- !u!114 &1985845789
 MonoBehaviour:
   m_ObjectHideFlags: 0
